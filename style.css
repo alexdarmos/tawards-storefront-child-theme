@@ -1,0 +1,50 @@
+/*
+ Theme Name:   Storefront Child
+ Theme URI:    https://woocommerce.com/storefront/
+ Description:  Storefront Child Theme
+ Author:       Alex Darmos
+ Author URI:    https://woocommerce.com/
+ Template:     storefront
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         e-commerce, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready, rtl-language-support, footer-widgets, sticky-post, theme-options, editor-style
+ Text Domain:  storefrontchild
+*/
+
+/*
+*
+*---------*
+*  Index  *
+*---------*
+*
+* 1. Global
+* 2. Home Page
+*
+*/
+
+/* 1. Global */
+
+/* 2. Home Page */
+#masthead.site-header {
+	margin-bottom: 0px;
+}
+
+.header-widget-region .col-full {
+	max-width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.header-widget-region .widget {
+	padding-top: 0px;
+}
+
+#home-page-banner {
+	width: 100%;
+	height: 500px;
+	background: url('/wp-content/uploads/2021/06/custom-award-engraving-st-joe-mi.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}

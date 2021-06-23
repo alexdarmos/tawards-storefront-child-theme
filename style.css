@@ -20,10 +20,41 @@
 *
 * 1. Global
 * 2. Home Page
+* 3. Product Page
 *
 */
 
 /* 1. Global */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+	font-family: 'Roboto Slab';
+}
+
+a:focus,
+button:focus,
+.button.alt:focus,
+input:focus,
+textarea:focus,
+input[type='button']:focus,
+input[type='reset']:focus,
+input[type='submit']:focus,
+input[type='email']:focus,
+input[type='tel']:focus,
+input[type='url']:focus,
+input[type='password']:focus,
+input[type='search']:focus {
+	outline-color: #d3991f;
+}
+
+a {
+	color: #d3991f;
+}
 
 /* 2. Home Page */
 #masthead.site-header {
@@ -47,4 +78,71 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#home-page-banner .banner-logo-container {
+	width: 406px;
+	margin-left: 20%;
+	position: relative;
+	transition: 300ms ease-in-out;
+}
+
+#home-page-banner .banner-logo-container:hover {
+	transform: scale(1.04);
+}
+
+#home-page-banner .banner-logo-container::after {
+	content: '\f091';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 240px;
+	position: absolute;
+	left: calc(50% - 120px);
+	top: 0;
+	z-index: 5;
+	opacity: 0.5;
+	color: #fff;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #d3991f;
+}
+
+#home-page-banner h1 {
+	position: relative;
+	z-index: 10;
+	font-size: 60px;
+	letter-spacing: 5px;
+	color: white;
+	font-weight: 500;
+	text-shadow: 1px 3px 8px black;
+}
+
+.fa-trophy:before {
+	color: #d3991f;
+}
+
+/* 2. Product Page */
+a.storefront-sticky-add-to-cart__content-button.button.alt {
+	min-width: 125px;
+	text-align: center;
+	margin-left: 15px;
+}
+
+span.sku_wrapper {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.woocommerce-info,
+.woocommerce-noreviews,
+p.no-comments {
+	background-color: #d3991f;
+}
+
+p.stars.selected a.active:before,
+p.stars:hover a:before,
+p.stars.selected a:not(.active):before,
+p.stars.selected a.active:before {
+	color: #d3991f;
 }

@@ -2,7 +2,7 @@
 
 
 
-echo 'test ' . ( is_product() );
+//todo: use posts_selection action to fix is_product() condition
 // if ( is_product() ) {
     remove_action('woocommerce_after_single_product_summary','woocommerce_output_product_data_tabs',10);
 
